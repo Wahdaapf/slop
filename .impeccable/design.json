@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-27T23:55:43.000Z",
+  "title": "Design System: PlayTest ID",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Ungu PlayTest", "canonical": "#7C3AED", "tonalRamp": ["#F5F3FF", "#EDE9FE", "#DDD6FE", "#C4B5FD", "#A78BFA", "#8B5CF6", "#7C3AED", "#6D28D9", "#5B21B6", "#4C1D95"] },
+      "pink": { "role": "secondary", "displayName": "Pink aksen", "canonical": "#EC4899", "tonalRamp": ["#FDF2F8", "#FCE7F3", "#F9A8D4", "#EC4899", "#DB2777"] },
+      "blue": { "role": "tertiary", "displayName": "Biru informasi", "canonical": "#3B82F6", "tonalRamp": ["#EFF6FF", "#DBEAFE", "#3B82F6", "#2563EB"] },
+      "orange": { "role": "tertiary", "displayName": "Oranye perhatian", "canonical": "#F97316", "tonalRamp": ["#FFF7ED", "#FFEDD5", "#F97316", "#EA580C"] },
+      "success": { "role": "tertiary", "displayName": "Hijau sukses", "canonical": "#22C55E" },
+      "warning": { "role": "tertiary", "displayName": "Kuning peringatan", "canonical": "#F59E0B" },
+      "error": { "role": "tertiary", "displayName": "Merah error", "canonical": "#EF4444" },
+      "gray-50": { "role": "neutral", "displayName": "Gray 50", "canonical": "#F8FAFC" },
+      "gray-200": { "role": "neutral", "displayName": "Gray 200", "canonical": "#E2E8F0" },
+      "gray-500": { "role": "neutral", "displayName": "Gray 500", "canonical": "#64748B" },
+      "gray-900": { "role": "neutral", "displayName": "Gray 900", "canonical": "#0F172A" }
+    },
+    "shadows": [
+      { "name": "card-sm", "value": "0 1px 2px rgba(15, 23, 42, 0.05)", "purpose": "Kartu dashboard default." },
+      { "name": "card-md", "value": "0 4px 12px rgba(15, 23, 42, 0.08)", "purpose": "Panel mengambang dan elemen bertingkat." },
+      { "name": "card-lg", "value": "0 10px 30px rgba(15, 23, 42, 0.10)", "purpose": "Popover dan aksen hero yang mengambang." }
+    ],
+    "motion": [
+      { "name": "status-progress", "value": "transform 240ms ease", "purpose": "Perubahan progres meter." },
+      { "name": "drawer", "value": "transform 180ms ease", "purpose": "Buka tutup navigasi mobile." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "640px" },
+      { "name": "tablet", "value": "768px" },
+      { "name": "desktop", "value": "1024px" }
+    ]
+  },
+  "components": [],
+  "narrative": {
+    "northStar": "Reliable, Modern, Simple, Transparent",
+    "overview": "PlayTest ID adalah platform dashboard untuk mengatur pengujian aplikasi Android bagi Developer, Tester, dan Admin. Sistem visualnya bersih, ramah, dan berorientasi data dengan bidang putih, abu terang, ungu, dan pink.",
+    "keyCharacteristics": ["Dashboard data yang bersih", "Ungu sebagai aksi utama", "Status semantik dan kartu membulat"],
+    "rules": [
+      { "name": "Status Is Never Color-Only", "body": "Pasangkan warna status dengan label atau ikon yang dapat dibaca.", "section": "colors" },
+      { "name": "Quiet Elevation", "body": "Bayangan membantu membedakan lapisan, bukan menggantikan garis tepi atau hierarki.", "section": "elevation" }
+    ],
+    "dos": ["Gunakan latar Gray 50 dan permukaan putih untuk mengelompokkan data.", "Gunakan spacing kelipatan 4px dan radius konsisten."],
+    "donts": ["Jangan memakai warna status tanpa label.", "Jangan memakai terlalu banyak warna chart dalam satu visual.", "Jangan sajikan angka demo sebagai angka bisnis final."]
+  }
+}

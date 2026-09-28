@@ -1,0 +1,93 @@
+{
+  "title": "Pilih arah desain PlayTest ID",
+  "question": "Arah mana yang paling cocok untuk sistem UI Developer, Tester, dan Admin? Setiap skema menunjukkan Developer Dashboard dan Tester Home agar konsep diuji pada konteks desktop dan mobile. Pilih satu untuk dikembangkan, atau minta putaran alternatif.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Buku Cue Stage Manager",
+      "kicker": "THE ROLL",
+      "lineage": "Buku cue dan run sheet yang dipakai stage manager untuk menjaga sebuah pertunjukan berjalan sesuai urutan.",
+      "thesis": "Satu siklus pengujian terbaca seperti run sheet: developer menyusun misi, tester menjalankan cue harian, dan admin menindaklanjuti pengecualian.",
+      "palette": ["#f5f0e6", "#1d2940", "#d75a3a", "#547b72"],
+      "materials": ["lembar run sheet", "tab berindeks", "slip insiden"],
+      "viewport": "Dashboard developer menempatkan progres tester, cue yang perlu ditindak, dan timeline dalam satu run sheet. Tester Home mengubah run sheet itu menjadi kartu misi harian; Admin memakai log cue untuk meninjau perubahan dan eskalasi.",
+      "risk": "Metafora panggung dapat terasa dekoratif; label, status, dan aksi tetap memakai istilah produk yang lugas.",
+      "comp": ".impeccable/mocks/decision/cuebook.webp",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [{"label": "role switch + top bar", "x": 0, "y": 0, "w": 12, "h": 1}, {"label": "workspace navigation", "x": 0, "y": 1, "w": 2, "h": 9}, {"label": "run status + next action", "x": 2, "y": 1, "w": 10, "h": 2, "accent": true}, {"label": "tester progress / daily cues", "x": 2, "y": 3, "w": 7, "h": 4}, {"label": "issues + activity log", "x": 9, "y": 3, "w": 3, "h": 4}, {"label": "project run sheet", "x": 2, "y": 7, "w": 10, "h": 3}]}
+    },
+    {
+      "id": "model-pick",
+      "label": "Meja Rundown Siaran Langsung",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Rundown operasional ruang kontrol siaran: segmen bernomor, status on-air, dan catatan perubahan real-time.",
+      "thesis": "Setiap proyek menjadi rundown yang bergerak dari persiapan ke rekrutmen, sesi, validasi, dan laporan.",
+      "palette": ["#f3f4f1", "#17243a", "#ed6a3b", "#f0c95a"],
+      "materials": ["lembar rundown", "penanda status siaran", "catatan operator"],
+      "viewport": "Dashboard developer membuka dengan jalur status lintas proyek dan satu rundown aktif; Tester Home menampilkan misi yang sedang berjalan berikut durasi serta reward yang tervalidasi; Admin mendapat antrean pengecualian dan aktivitas platform.",
+      "risk": "Rundown operasional umum untuk banyak dashboard; identitas PlayTest ID harus datang dari alur misi dan validasi yang spesifik.",
+      "comp": ".impeccable/mocks/decision/broadcast-rundown.webp",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [{"label": "role switch + live status", "x": 0, "y": 0, "w": 12, "h": 1}, {"label": "workspace navigation", "x": 0, "y": 1, "w": 2, "h": 9}, {"label": "run-of-show stage rail", "x": 2, "y": 1, "w": 10, "h": 2, "accent": true}, {"label": "active project rundown", "x": 2, "y": 3, "w": 8, "h": 5}, {"label": "on-air exceptions", "x": 10, "y": 3, "w": 2, "h": 5}, {"label": "recent activity", "x": 2, "y": 8, "w": 10, "h": 2}]}
+    },
+    {
+      "id": "challenger-manual",
+      "label": "Manual Kerja Ber-tab",
+      "verdict": "competitive",
+      "lineage": "Manual referensi ber-tab dengan lembar transparan di atas divider berwarna.",
+      "thesis": "Informasi tiap pengujian disusun sebagai bagian bertab dengan lembar instruksi, bukti, dan status yang bertumpuk jelas.",
+      "palette": ["#f4efe4", "#244c72", "#d9a52e", "#bd503e"],
+      "materials": ["divider berwarna", "lembar transparan", "indeks bertingkat"],
+      "viewport": "Proyek dan misi memakai rail tab sebagai indeks; membuka satu bagian mengungkap instruksi, kriteria validasi, dan bukti yang relevan tanpa menyembunyikan status keseluruhan.",
+      "case": "Kompetitif: memperjelas instruksi misi, aturan, dan dokumen tiap proyek. Kurang kuat untuk mengekspresikan progres cohort dan operasi real-time.",
+      "risk": "Dapat terasa seperti dokumentasi statis jika progres, aksi, dan perubahan status tidak tetap terlihat.",
+      "comp": ".impeccable/mocks/decision/challenger-manual.webp",
+      "hero": "https://impeccable.style/worlds/cards/rw-manual-acetate-tab-board-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/rw-manual-acetate-tab-board.webp",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [{"label": "project heading + status", "x": 0, "y": 0, "w": 12, "h": 1}, {"label": "section tabs", "x": 0, "y": 1, "w": 2, "h": 9}, {"label": "project overview sheet", "x": 2, "y": 1, "w": 7, "h": 3, "accent": true}, {"label": "validation guide", "x": 2, "y": 4, "w": 7, "h": 4}, {"label": "evidence + activity", "x": 9, "y": 1, "w": 3, "h": 7}, {"label": "next step", "x": 2, "y": 8, "w": 10, "h": 2}]}
+    },
+    {
+      "id": "challenger-console",
+      "label": "Konsol Operator Developer",
+      "verdict": "competitive",
+      "lineage": "Konsol developer berpanel, latar grafit, garis pemisah tipis, dan angka monospasi.",
+      "thesis": "Panel status tetap dan data padat membantu developer serta admin memindai kondisi proyek dan tindakan yang memerlukan perhatian.",
+      "palette": ["#171b20", "#d9e0e5", "#53b7a5", "#e97858"],
+      "materials": ["panel grafit", "seam satu piksel", "aksen status"],
+      "viewport": "Dashboard merangkai panel KPI, proyek aktif, bug kritis, dan aktivitas; Tester Home menerjemahkan panel menjadi satu tugas utama dan progres harian pada layar sempit.",
+      "case": "Kompetitif: familier dan efisien bagi developer/admin yang sering memantau status. Tidak cukup membedakan PlayTest ID dan berisiko terasa seperti template devtool.",
+      "risk": "Kontras dan suasana konsol gelap bisa mengurangi kehangatan area Tester serta kenyamanan baca lama.",
+      "comp": ".impeccable/mocks/decision/challenger-console.webp",
+      "hero": "https://impeccable.style/worlds/cards/digital-design-canon-dark-first-developer-console-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/digital-design-canon-dark-first-developer-console.webp",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [{"label": "workspace bar", "x": 0, "y": 0, "w": 12, "h": 1}, {"label": "persistent navigation", "x": 0, "y": 1, "w": 2, "h": 9}, {"label": "status metrics", "x": 2, "y": 1, "w": 10, "h": 2, "accent": true}, {"label": "project panels", "x": 2, "y": 3, "w": 7, "h": 5}, {"label": "alerts + actions", "x": 9, "y": 3, "w": 3, "h": 5}, {"label": "event log", "x": 2, "y": 8, "w": 10, "h": 2}]}
+    },
+    {
+      "id": "challenger-teletext",
+      "label": "Indeks Teletext",
+      "verdict": "competitive",
+      "lineage": "Majalah teletext siaran: alamat halaman tiga digit, kisi tetap, dan status berbasis warna.",
+      "thesis": "Pengujian dibuka dari indeks ringkas dan status disusun dalam baris bernomor yang mudah dipindai.",
+      "palette": ["#121923", "#f5d34d", "#58c7d5", "#f8f7f1"],
+      "materials": ["kisi modular", "alamat halaman", "blok status"],
+      "viewport": "Indeks proyek menunjukkan status dan kuota dalam baris; halaman detail memisahkan misi, bug, transaksi, dan audit menjadi area bernomor.",
+      "case": "Kompetitif: indeks dan kisi tegas mendukung scan cepat dan hierarki padat. Hubungan dengan pengalaman playtest dan kebutuhan mobile lebih lemah.",
+      "risk": "Palet dan grid yang terlalu literal terasa retro serta dapat melemahkan keterbacaan dan aksesibilitas.",
+      "comp": ".impeccable/mocks/decision/challenger-teletext.webp",
+      "hero": "https://impeccable.style/worlds/cards/broadcast-programming-teletext-service-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/broadcast-programming-teletext-service.webp",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [{"label": "page index + role", "x": 0, "y": 0, "w": 12, "h": 1}, {"label": "section numbers", "x": 0, "y": 1, "w": 2, "h": 9}, {"label": "summary index", "x": 2, "y": 1, "w": 10, "h": 2, "accent": true}, {"label": "numbered project rows", "x": 2, "y": 3, "w": 10, "h": 5}, {"label": "status key + update time", "x": 2, "y": 8, "w": 10, "h": 2}]}
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": true},
+  "canon": true,
+  "canonCard": {
+    "label": "Pola dashboard SaaS umum",
+    "thesis": "Antarmuka yang familier, ringkas, dan efisien untuk tugas pengelolaan.",
+    "palette": ["#ffffff", "#f1f4f7", "#192333", "#3569e8"],
+    "materials": ["grid netral", "kartu metrik", "tabel data"],
+    "viewport": "Navigasi samping, ringkasan metrik, tabel proyek, dan status yang mudah dipindai.",
+    "risk": "Mudah dipahami tetapi mudah tertukar dengan platform SaaS lain.",
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  },
+  "steer": true
+}

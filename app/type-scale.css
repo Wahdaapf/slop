@@ -1,0 +1,30 @@
+.page-content small { font-size: 11px !important; }
+.page-content .field-label { font-size: 11px; }
+.page-content .status-tag { font-size: 11px; }
+.page-content .section-head p,.page-content .text-link { font-size: 11px; }
+.page-content .data-strip__item>span { font-size: 11px; }
+.page-content .data-strip__item>small { font-size: 11px !important; }
+.page-content .project-row__app strong,.page-content .app-list-row__main strong { font-size: 13px; }
+.page-content .project-row__count strong { font-size: 13px; }
+.page-content .activity-list strong,.page-content .incident-slip__body strong { font-size: 11px; }
+.page-content .mono { font-size: 11px; }
+.page-content .button { font-size: 13px; }
+.page-content .queue-row>span:first-child { font-size: 11px; }
+.page-content .ticket-slip h2 { font-size: 13px; }
+.page-content .form-field,.page-content .form-field input,.page-content .form-field select,.page-content .form-field textarea { font-size: 13px; }
+.tester-tabbar a { font-size: 10px; }
+@media(max-width:640px){
+  .page-content>* { max-width: 100%; }
+  .demo-notice { width: 100%; max-width: 100%; flex-wrap: wrap; }
+  .demo-notice>span { display: block; flex: 1 1 auto; min-width: 0; white-space: normal; overflow-wrap: anywhere; }
+  .tester-hero,.tester-hero__top,.tester-hero__body,.tester-hero__copy,.tester-hero__foot,.mission-cue,.mission-cue__content { min-width: 0; max-width: 100%; }
+  .tester-hero { overflow: hidden; }
+  .mission-cue { width: 100%; grid-template-columns: 58px minmax(0,1fr); }
+  .mission-cue__content { overflow-wrap: anywhere; }
+  .tester-stats>* { min-width: 0; }
+  .app-list-row>* { min-width: 0; }
+  .project-row__app strong,.page-content .section-head p { font-size: 11px; }
+  .page-content .text-link { font-size: 11px; }
+  .page-content .button { font-size: 12px; }
+  .tester-tabbar a { font-size: 10px; }
+}
